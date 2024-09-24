@@ -1,3 +1,5 @@
+import time
+
 import pytest
 from selenium import webdriver
 from selenium.webdriver import Keys
@@ -24,6 +26,7 @@ class TestAmazon:
         actual_text = self.driver.find_element(By.XPATH, "//span[@class='a-color-state a-text-bold']").text
 
         assert exepcted_text == actual_text, f'Error. expected tekst {exepcted_text}, a mamy: {actual_text}'
+        time.sleep(50)
 
     def teardown_method(self):
         self.driver.quit()

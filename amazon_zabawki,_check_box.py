@@ -1,5 +1,6 @@
 import time
 
+import pytest
 from selenium import webdriver
 from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
@@ -18,6 +19,7 @@ def test_amazon_search():
         driver.find_element(By.ID, 'sp-cc-accept').click()
     except:
         print("no element cookies")
+
 
 
     time.sleep(5)
