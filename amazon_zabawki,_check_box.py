@@ -14,7 +14,7 @@ def test_amazon_search():
     driver.get('https://www.amazon.de/stores/page/A3BF7899-27D9-459F-9761-F23AEA413EA3')
     driver.maximize_window()
 
-#try/exept blok = jesli czasem okienko siepoojawia a czasem nie
+# try/except block to handle situations where an operation might fail, such as when a window may or may not appear
     try:
         driver.find_element(By.ID, 'sp-cc-accept').click()
     except:
