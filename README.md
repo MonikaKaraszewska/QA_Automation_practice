@@ -30,4 +30,4 @@ The "QA_Automation_practice" repository contains a collection of scripts and aut
 ## Requirements
 
 - Python 3.x
-- Libraries: Selenium, pytest, etc.
+- Libraries: Selenium, pytest, re, time.
